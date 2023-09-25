@@ -1,12 +1,19 @@
+'''
+@Author: Rafael Camargo
+@Contact: rafaelcamargo.inf@gmail.com
+@Version 0.1.0
+@Year 2023
+'''
+
 import time
 import logging
 from sqlite.dados import Database
 from sqlite.configPG import ConfigPG
 from conn.psqlConn import Postgres
 from conn.sqlQuery import QueryMaker
-from common.sgm import Method as Sgm
-from common.converter import Converter
-from common.exportar import Exportar
+from bd_method.sgm import Method as Sgm
+from bd_method.converter import Converter
+from bd_method.exportar import Exportar
 from dotenv import dotenv_values
 
 #### CONFIGURAÇÃO ####
