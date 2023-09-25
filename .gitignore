@@ -1,0 +1,7 @@
+/.vscode
+/db
+__pycache__/
+/.tmp
+*.xlsx
+.config
+.config.*
