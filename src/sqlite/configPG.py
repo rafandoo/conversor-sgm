@@ -228,5 +228,5 @@ class ConfigPG():
         for chave, valor in config_fiscal.items():
             try:
                 self.__cursor.execute('INSERT INTO pg_configuracao_fiscal (id ,descricao, tipo, cod_empresa, codigo_fiscal, prioridade, finalidade, cod_aliquota, cst) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)', (valor[0], valor[1], valor[2], valor[3], valor[4], valor[5], valor[6], valor[7], valor[8]))
-            except:
+            except Exception as e:
                 logging.error(e)
